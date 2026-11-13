@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izhan Khalid — Computer Science Student</title>
+  <meta name="description"
+    content="Personal portfolio of Izhan Khalid, a Computer Science student at COMSATS University Islamabad exploring networking, cybersecurity, artificial intelligence, and software development.">
+
+  <!-- Google Fonts: Geist (Headings/Nav) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Izhan Khalid portfolio home">
+        <span class="brand-text">IZHAN KHALID</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="Toggle navigation menu">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#interests" class="nav-link">Interests</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Landmark -->
+  <main id="main-content">
+    <!-- Hero Section (Centered & Dominant) -->
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
+      <!-- Atmospheric Geometric Mosaic Background Visual -->
+      <div class="hero-mosaic-wrapper" aria-hidden="true">
+        <svg class="hero-mosaic-svg" viewBox="0 0 1440 850" fill="none" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <!-- Atmospheric Radial Glows -->
+            <radialGradient id="mosaic-burgundy-glow" cx="48%" cy="45%" r="48%">
+              <stop offset="0%" stop-color="#702D42" stop-opacity="0.32" />
+              <stop offset="42%" stop-color="#252B20" stop-opacity="0.18" />
+              <stop offset="85%" stop-color="#10110F" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="mosaic-olive-glow" cx="54%" cy="60%" r="52%">
+              <stop offset="0%" stop-color="#3D4932" stop-opacity="0.30" />
+              <stop offset="50%" stop-color="#252B20" stop-opacity="0.14" />
+              <stop offset="100%" stop-color="#10110F" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="mosaic-orange-glow" cx="72%" cy="36%" r="32%">
+              <stop offset="0%" stop-color="#B9683F" stop-opacity="0.18" />
+              <stop offset="70%" stop-color="#252B20" stop-opacity="0" />
+            </radialGradient>
+
+            <!-- Mosaic Tile Gradients -->
+            <linearGradient id="tile-grad-darkolive" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#3D4932" stop-opacity="0.45" />
+              <stop offset="100%" stop-color="#252B20" stop-opacity="0.18" />
+            </linearGradient>
+
+            <linearGradient id="tile-grad-burgundy" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#702D42" stop-opacity="0.35" />
+              <stop offset="60%" stop-color="#252B20" stop-opacity="0.20" />
+              <stop offset="100%" stop-color="#10110F" stop-opacity="0.10" />
+            </linearGradient>
+
+            <linearGradient id="tile-grad-deepolive" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#252B20" stop-opacity="0.55" />
+              <stop offset="100%" stop-color="#10110F" stop-opacity="0.30" />
+            </linearGradient>
+
+            <linearGradient id="tile-grad-amber" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#B9683F" stop-opacity="0.22" />
+              <stop offset="50%" stop-color="#3D4932" stop-opacity="0.25" />
+              <stop offset="100%" stop-color="#252B20" stop-opacity="0.12" />
+            </linearGradient>
+
+            <!-- Specular Edge Lines -->
+            <linearGradient id="sheen-h" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#EAE8DF" stop-opacity="0" />
+              <stop offset="25%" stop-color="#EAE8DF" stop-opacity="0.26" />
+              <stop offset="75%" stop-color="#A5AD91" stop-opacity="0.18" />
+              <stop offset="100%" stop-color="#EAE8DF" stop-opacity="0" />
+            </linearGradient>
+
+            <!-- Directional Fades to Obsidian Black -->
+            <linearGradient id="top-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#10110F" stop-opacity="1" />
+              <stop offset="22%" stop-color="#10110F" stop-opacity="0" />
+            </linearGradient>
+
+            <linearGradient id="bottom-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="75%" stop-color="#10110F" stop-opacity="0" />
+              <stop offset="100%" stop-color="#10110F" stop-opacity="1" />
+            </linearGradient>
+
+            <linearGradient id="left-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#10110F" stop-opacity="1" />
+              <stop offset="18%" stop-color="#10110F" stop-opacity="0" />
+            </linearGradient>
+
+            <linearGradient id="right-fade" x1="100%" y1="0%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#10110F" stop-opacity="1" />
+              <stop offset="18%" stop-color="#10110F" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+
+          <!-- 1. Atmospheric Ambient Halos -->
+          <ellipse cx="680" cy="380" rx="580" ry="340" fill="url(#mosaic-burgundy-glow)" />
+          <ellipse cx="760" cy="440" rx="540" ry="320" fill="url(#mosaic-olive-glow)" />
+          <ellipse cx="1060" cy="300" rx="320" ry="220" fill="url(#mosaic-orange-glow)" />
+
+          <!-- 2. Deep Geometric Panels (Background Tier) -->
+          <rect x="120" y="80" width="320" height="200" rx="6" fill="url(#tile-grad-darkolive)"
+            stroke="rgba(234, 232, 223, 0.08)" stroke-width="1" />
+          <rect x="410" y="50" width="240" height="180" rx="4" fill="url(#tile-grad-burgundy)"
+            stroke="rgba(112, 45, 66, 0.3)" stroke-width="1" />
+          <rect x="620" y="100" width="380" height="220" rx="6" fill="url(#tile-grad-deepolive)"
+            stroke="rgba(234, 232, 223, 0.06)" stroke-width="1" />
+          <rect x="970" y="60" width="340" height="210" rx="6" fill="url(#tile-grad-amber)"
+            stroke="rgba(185, 104, 63, 0.18)" stroke-width="1" />
+
+          <!-- 3. Midground Overlapping Tiles (Varied Proportions) -->
+          <rect x="80" y="250" width="220" height="300" rx="6" fill="url(#tile-grad-burgundy)"
+            stroke="rgba(112, 45, 66, 0.25)" stroke-width="1" />
+          <rect x="270" y="240" width="260" height="180" rx="4" fill="url(#tile-grad-darkolive)"
+            stroke="rgba(234, 232, 223, 0.10)" stroke-width="1" />
+          <rect x="500" y="210" width="440" height="260" rx="8" fill="url(#tile-grad-deepolive)"
+            stroke="rgba(234, 232, 223, 0.10)" stroke-width="1" />
+          <rect x="910" y="230" width="260" height="340" rx="6" fill="url(#tile-grad-darkolive)"
+            stroke="rgba(165, 173, 145, 0.12)" stroke-width="1" />
+          <rect x="1140" y="220" width="220" height="270" rx="6" fill="url(#tile-grad-burgundy)"
+            stroke="rgba(112, 45, 66, 0.22)" stroke-width="1" />
+
+          <!-- 4. Foreground Structural & Focal Tiles -->
+          <rect x="180" y="380" width="120" height="120" rx="4" fill="rgba(37, 43, 32, 0.5)"
+            stroke="rgba(234, 232, 223, 0.14)" stroke-width="1" />
+          <rect x="320" y="390" width="160" height="150" rx="6" fill="url(#tile-grad-burgundy)"
+            stroke="rgba(112, 45, 66, 0.4)" stroke-width="1" />
+          <rect x="140" y="520" width="300" height="170" rx="6" fill="url(#tile-grad-darkolive)"
+            stroke="rgba(234, 232, 223, 0.08)" stroke-width="1" />
+          <rect x="460" y="430" width="520" height="270" rx="8" fill="url(#tile-grad-deepolive)"
+            stroke="rgba(234, 232, 223, 0.09)" stroke-width="1" />
+          <rect x="830" y="440" width="140" height="130" rx="4" fill="url(#tile-grad-amber)"
+            stroke="rgba(185, 104, 63, 0.35)" stroke-width="1" />
+          <rect x="940" y="410" width="310" height="190" rx="6" fill="url(#tile-grad-burgundy)"
+            stroke="rgba(112, 45, 66, 0.28)" stroke-width="1" />
+
+          <!-- 5. Lower Transition Tiles (Extending into page) -->
+          <rect x="280" y="650" width="340" height="180" rx="6" fill="url(#tile-grad-deepolive)"
+            stroke="rgba(234, 232, 223, 0.07)" stroke-width="1" />
+          <rect x="590" y="660" width="310" height="170" rx="6" fill="url(#tile-grad-burgundy)"
+            stroke="rgba(112, 45, 66, 0.20)" stroke-width="1" />
+          <rect x="870" y="580" width="320" height="230" rx="6" fill="url(#tile-grad-darkolive)"
+            stroke="rgba(165, 173, 145, 0.09)" stroke-width="1" />
+
+          <!-- 6. Specular Top-Edge Light Catchers -->
+          <line x1="270" y1="240" x2="530" y2="240" stroke="url(#sheen-h)" stroke-width="1.5" />
+          <line x1="320" y1="390" x2="480" y2="390" stroke="url(#sheen-h)" stroke-width="1.5" />
+          <line x1="500" y1="210" x2="940" y2="210" stroke="url(#sheen-h)" stroke-width="1.5" />
+          <line x1="830" y1="440" x2="970" y2="440" stroke="url(#sheen-h)" stroke-width="1.5" />
+          <line x1="140" y1="520" x2="440" y2="520" stroke="url(#sheen-h)" stroke-width="1.5" />
+          <line x1="590" y1="660" x2="900" y2="660" stroke="url(#sheen-h)" stroke-width="1.5" />
+
+          <!-- 7. Micro-Accent Anchor Points -->
+          <circle cx="320" cy="390" r="2.5" fill="#B9683F" opacity="0.9" />
+          <circle cx="830" cy="440" r="2.5" fill="#B9683F" opacity="0.9" />
+          <circle cx="970" cy="270" r="2.5" fill="#B9683F" opacity="0.8" />
+          <circle cx="500" cy="210" r="2.5" fill="#A5AD91" opacity="0.8" />
+
+          <!-- 8. Soft Edge Integration Fades -->
+          <rect x="0" y="0" width="1440" height="850" fill="url(#top-fade)" pointer-events="none" />
+          <rect x="0" y="0" width="1440" height="850" fill="url(#bottom-fade)" pointer-events="none" />
+          <rect x="0" y="0" width="1440" height="850" fill="url(#left-fade)" pointer-events="none" />
+          <rect x="0" y="0" width="1440" height="850" fill="url(#right-fade)" pointer-events="none" />
+        </svg>
+      </div>
+
+      <!-- Hero Centered Content -->
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Small Introductory Label -->
+          <div class="hero-badge reveal-on-scroll" role="text">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span class="badge-text">COMPUTER SCIENCE STUDENT</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 id="hero-heading" class="hero-title reveal-on-scroll">Hi, I'm Izhan Khalid.</h1>
+
+          <!-- Supporting Headline -->
+          <p class="hero-headline reveal-on-scroll">Exploring technology. Building solutions.</p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions reveal-on-scroll">
+            <a href="#about" class="btn btn-secondary">
+              <span>Explore More</span>
+            </a>
+            <a href="#contact" class="btn btn-primary">
+              <span>Get In Touch</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-card reveal-on-scroll">
+          <div class="about-card-sheen" aria-hidden="true"></div>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <div class="about-body">
+            <p class="about-text">
+              I am a Computer Science undergraduate at COMSATS University Islamabad with a focus on software
+              development, artificial intelligence, and cybersecurity.
+            </p>
+            <p class="about-text">
+              My approach centers on understanding computing systems from the ground up—exploring how software
+              architectures scale, how security models hold, and how intelligent systems can solve tangible problems. I
+              spend my time building practical applications, exploring modern tooling, and turning technical concepts
+              into dependable solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section interests-section" id="interests" aria-labelledby="interests-heading">
+      <div class="container">
+        <div class="interests-header reveal-on-scroll">
+          <h2 id="interests-heading" class="section-title">Areas of Interest</h2>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-card reveal-on-scroll delay-1">
+            <div class="interest-card-sheen" aria-hidden="true"></div>
+            <span class="interest-pip" aria-hidden="true"></span>
+            <span class="interest-name">Development</span>
+          </div>
+
+          <div class="interest-card reveal-on-scroll delay-2">
+            <div class="interest-card-sheen" aria-hidden="true"></div>
+            <span class="interest-pip" aria-hidden="true"></span>
+            <span class="interest-name">Artificial Intelligence</span>
+          </div>
+
+          <div class="interest-card reveal-on-scroll delay-3">
+            <div class="interest-card-sheen" aria-hidden="true"></div>
+            <span class="interest-pip" aria-hidden="true"></span>
+            <span class="interest-name">Cybersecurity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="projects-header reveal-on-scroll">
+          <h2 id="projects-heading" class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: OpenSource Match -->
+          <div class="project-card reveal-on-scroll delay-1">
+            <div class="project-card-sheen" aria-hidden="true"></div>
+            <div class="project-header">
+              <div class="project-icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                </svg>
+              </div>
+              <h3 class="project-title">OpenSource Match</h3>
+            </div>
+            <p class="project-description">
+              An AI-powered web platform that connects developers with real, beginner-friendly GitHub issues based on
+              their experience level, technical stack, and learning goals. Employs Google's Gemma model to evaluate
+              issue difficulty and provide actionable first steps.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Supabase</span>
+              <span class="project-tag">Gemini API</span>
+              <span class="project-tag">GitHub REST API</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Izhan-web/opensource-match" class="btn btn-secondary project-link"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="View OpenSource Match on GitHub (opens in a new tab)">
+                <span>View on GitHub</span>
+                <svg class="btn-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12L12 4M12 4H6M12 4V10" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Password Analyzer -->
+          <div class="project-card reveal-on-scroll delay-2">
+            <div class="project-card-sheen" aria-hidden="true"></div>
+            <div class="project-header">
+              <div class="project-icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0110 0v4" />
+                </svg>
+              </div>
+              <h3 class="project-title">Password Analyzer</h3>
+            </div>
+            <p class="project-description">
+              A local desktop security utility built in Python that evaluates password resilience through entropy
+              estimation and pattern vulnerability detection. Identifies sequential characters and dictionary flaws,
+              generating cryptographically secure credentials entirely offline.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Tkinter</span>
+              <span class="project-tag">Security</span>
+              <span class="project-tag">Secrets Module</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Izhan-web/Password-Analyzer" class="btn btn-secondary project-link"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="View Password Analyzer on GitHub (opens in a new tab)">
+                <span>View on GitHub</span>
+                <svg class="btn-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 12L12 4M12 4H6M12 4V10" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-header reveal-on-scroll">
+          <h2 id="contact-heading" class="section-title">Let's Connect.</h2>
+          <p class="contact-subtitle">Interested in connecting or discussing technology? Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-links-grid">
+          <!-- Email Link -->
+          <a href="mailto:izhanrao2@gmail.com" class="contact-link-card reveal-on-scroll delay-1"
+            aria-label="Send email to izhanrao2@gmail.com">
+            <div class="contact-card-sheen" aria-hidden="true"></div>
+            <div class="contact-icon-box">
+              <svg class="contact-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-type">Email</span>
+              <span class="contact-value">izhanrao2@gmail.com</span>
+            </div>
+            <div class="contact-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12L12 4M12 4H6M12 4V10" />
+              </svg>
+            </div>
+          </a>
+
+          <!-- LinkedIn Link -->
+          <a href="https://www.linkedin.com/in/izhan-khalid-44b218324"
+            class="contact-link-card reveal-on-scroll delay-2" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit Izhan's LinkedIn profile (opens in new tab)">
+            <div class="contact-card-sheen" aria-hidden="true"></div>
+            <div class="contact-icon-box">
+              <svg class="contact-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.91H5.06v8.59h2.8z" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-type">LinkedIn</span>
+              <span class="contact-value">www.linkedin.com/in/izhan-khalid-44b218324</span>
+            </div>
+            <div class="contact-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12L12 4M12 4H6M12 4V10" />
+              </svg>
+            </div>
+          </a>
+
+          <!-- GitHub Link -->
+          <a href="https://github.com/Izhan-web" class="contact-link-card reveal-on-scroll delay-3" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit Izhan's GitHub profile (opens in new tab)">
+            <div class="contact-card-sheen" aria-hidden="true"></div>
+            <div class="contact-icon-box">
+              <svg class="contact-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </div>
+            <div class="contact-details">
+              <span class="contact-type">GitHub</span>
+              <span class="contact-value">https://github.com/Izhan-web</span>
+            </div>
+            <div class="contact-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12L12 4M12 4H6M12 4V10" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-identity">
+        <span class="footer-name">IZHAN KHALID</span>
+        <span class="footer-role">Computer Science Student</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Izhan Khalid. All rights reserved.</p>
+      <div class="footer-actions">
+        <a href="https://github.com/Izhan-web" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/izhan-khalid-44b218324" class="footer-link" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+        <a href="#home" class="footer-top" aria-label="Back to top of page">
+          <span>Top</span>
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8 13V3M3 8l5-5 5 5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
