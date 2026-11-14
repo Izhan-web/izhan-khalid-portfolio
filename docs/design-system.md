@@ -1,3 +1,5 @@
+Superseded: the final site uses a Technical Mono direction (see project-plan.md).
+
 # Design System — Aero Nocturne
 
 This file translates the supplied `DESIGN.md` reference into practical implementation guidance for this landing page.
