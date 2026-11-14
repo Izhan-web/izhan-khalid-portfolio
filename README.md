@@ -9,7 +9,7 @@ A modern, minimal, and responsive single-page personal portfolio website built w
 - **Technical Mono Visual Identity**: Clean, dark aesthetic (#131413 background, #1B1C1B surface, #46483C hairlines) using Schibsted Grotesk for headings/body and Geist Mono for interface labels and tags.
 - **Hero Reveal & Interactions**: JS-driven masked word entrance for the main headline, pulsing status indicator, and dynamic rotating interest text line ("Currently exploring: [word]").
 - **Top Scroll Progress Bar**: A 2px orange indicator tracking viewport scroll depth.
-- **Two-Column About Section**: Balanced layout highlighting academic focus at COMSATS University Islamabad and core languages (Python, Java, C++, PHP).
+- **Two-Column About Section**: Balanced layout introducing my studies at COMSATS University Islamabad and my main interests.
 - **Five Hairline Interest Rows**: Structured exploration areas (Networking, Cybersecurity, Artificial Intelligence, Software Development, Web Development) with hover shifts and accent highlights.
 - **Spotlight Project Cards**: Interactive cards for OpenSource Match and Password Analyzer with real GitHub links and pointermove radial lighting.
 - **Accessible Contact Rows**: Full-width interactive rows for Email, LinkedIn, and GitHub with directional arrow transitions.

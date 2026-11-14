@@ -292,13 +292,13 @@ body {
    4. Hero Section
    -------------------------------------------------------------------------- */
 .hero-section {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: calc(var(--header-height) + 2rem);
+  padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
@@ -311,7 +311,7 @@ body {
   height: 100%;
   pointer-events: none;
   overflow: hidden;
-  opacity: 0.38;
+  opacity: 0.9;
   mask-image: linear-gradient(to right, transparent, black 35%);
   -webkit-mask-image: linear-gradient(to right, transparent, black 35%);
   z-index: 0;
@@ -610,10 +610,6 @@ body {
   transition: transform 200ms ease;
 }
 
-.interest-row:hover {
-  transform: translateX(4px);
-}
-
 .interest-num {
   font-family: var(--font-mono);
   font-size: 0.8125rem;
@@ -862,20 +858,13 @@ body {
 .delay-2 { transition-delay: 160ms; }
 .delay-3 { transition-delay: 240ms; }
 
-/* Accessibility contrast rule: text on orange backgrounds must be #10110F */
-.bg-orange,
-[style*="background: #B9683F"],
-[style*="background-color: #B9683F"] {
-  color: #10110F !important;
-}
-
 /* --------------------------------------------------------------------------
    11. Responsive Breakpoints
    -------------------------------------------------------------------------- */
 @media (max-width: 900px) {
   .hero-mosaic-wrapper {
     width: 80%;
-    opacity: 0.25;
+    opacity: 0.5;
   }
 }
 
@@ -944,7 +933,7 @@ body {
 
   .hero-mosaic-wrapper {
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.4;
   }
 }
 
@@ -995,10 +984,6 @@ body {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;
-  }
-
-  .interest-row:hover {
-    transform: none !important;
   }
 
   .contact-row:hover .contact-row-arrow {

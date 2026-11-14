@@ -1,3 +1,5 @@
+Superseded: the final site uses a Technical Mono direction and includes a Projects section (see project-plan.md). This file is kept as the original brief only.
+
 # Project Brief — Izhan's Portfolio Landing Page
 
 ## Purpose

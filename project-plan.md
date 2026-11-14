@@ -14,14 +14,14 @@ Recruiters, internship coordinators, and student peers need a quick, trustworthy
 ## Measurable Goals
 1. **Zero Console & Network Errors**: Clean page load with no 404s, script exceptions, or Content Security Policy violations.
 2. **100% Mobile & Desktop Responsiveness**: Flawless layout without horizontal overflow down to 320px viewport width.
-3. **Sub-Second Perceived Performance**: Lightweight static architecture with fast Google Font loading and minimal asset weight.
+3. **Fast Load Target**: Keep the site a lightweight static page (no frameworks, no images) so it loads quickly. This is a design target, not a measured result.
 4. **Complete Accessibility**: Visible keyboard focus rings, proper landmark structure, and strict adherence to `prefers-reduced-motion`.
 
 ## Sections & Features
 - **Sticky Header**: Compact wordmark `izhan.khalid`, responsive navigation (Home, About, Interests, Projects, Contact), and mobile drawer menu. Becomes slightly more opaque with a hairline border past 40px scroll.
 - **Top Scroll Progress Bar**: A 2px orange progress bar fixed to the top showing page scroll percentage.
 - **Hero**: Left-aligned headline with a masked geometric mosaic background on the right. Features a load-time word reveal for the heading, a pulsing status badge, a cycling "Currently exploring" mono text line, and primary/secondary CTA buttons.
-- **About ("01 / ABOUT")**: Two-column layout pairing a mono label and heading on the left with concise biographical paragraphs on the right detailing my studies at COMSATS and tech stack (Python, Java, C++, PHP).
+- **About ("01 / ABOUT")**: Two-column layout pairing a mono label and heading on the left with concise biographical paragraphs on the right about my studies at COMSATS and my interests.
 - **Interests ("02 / INTERESTS")**: Five hairline-separated rows (Networking, Cybersecurity, Artificial Intelligence, Software Development, Web Development) with hover shifts and accent transitions.
 - **Projects ("03 / PROJECTS")**: Flat surface cards for OpenSource Match and Password Analyzer with tags, descriptions, GitHub links, and pointermove spotlight glows.
 - **Contact ("04 / CONTACT")**: Three full-width clickable rows for Email, LinkedIn, and GitHub with directional hover arrows.

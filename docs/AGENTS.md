@@ -1,3 +1,5 @@
+Superseded: the final site uses a Technical Mono direction and includes a Projects section (see project-plan.md). This file is kept as the original brief only.
+
 # Agent Instructions
 
 You are building a small, polished personal portfolio landing page for a Computer Science student.

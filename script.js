@@ -162,8 +162,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const words = ['networking', 'cybersecurity', 'artificial intelligence', 'web development'];
     let currentIndex = 0;
     let intervalId = null;
+    let changeCount = 0;
+    let finished = false;
+
+    const stopRotation = () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+    };
 
     const changeWord = () => {
+      if (finished) return;
       rotatingWordEl.classList.add('word-exit');
       setTimeout(() => {
         currentIndex = (currentIndex + 1) % words.length;
@@ -172,19 +182,19 @@ document.addEventListener('DOMContentLoaded', () => {
         rotatingWordEl.classList.add('word-enter');
         void rotatingWordEl.offsetWidth; // Force repaint
         rotatingWordEl.classList.remove('word-enter');
+
+        changeCount++;
+        if (changeCount >= words.length) {
+          finished = true;
+          stopRotation();
+        }
       }, 300);
     };
 
     const startRotation = () => {
+      if (finished) return;
       if (!intervalId && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         intervalId = setInterval(changeWord, 2200);
-      }
-    };
-
-    const stopRotation = () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-        intervalId = null;
       }
     };
 
