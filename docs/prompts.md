@@ -36,3 +36,24 @@
 - **CSP Compliance**: Having a strict `style-src 'self' https://fonts.googleapis.com` required completely eliminating all inline `style="..."` attributes from HTML templates and managing all styling through class mutations and CSS variables.
 - **Event Cleanup**: Removing the reveal animation classes via a `{ once: true }` listener on `transitionend` completely resolved the sluggish hover latency.
 - **Reduced Motion Support**: Disabling JS rotation intervals and suppressing CSS transitions/transforms under `prefers-reduced-motion: reduce` ensured the site remains comfortable and accessible for all users.
+
+---
+
+## Entry 3: Review Fixes (Hero Spacing, Mosaic, Hover, Rotating Word, Docs)
+
+### Prompt Text
+Apply a fixed list of small fixes to the existing portfolio website without making any refactors, reformatting, or unrequested changes. The task required correcting hero spacing by accounting for the sticky header height, boosting hero mosaic visibility across breakpoints, removing misleading hover movement from non-clickable interest rows, stopping the rotating word after one complete loop, removing PHP mentions from the site and docs, and ensuring documentation and testing reports are strictly truthful and consistent.
+
+### What It Produced
+- Adjusted `.hero-section` min-height calculation to subtract `--header-height` and reduced padding-top to 2rem to prevent double-counting header height.
+- Increased `.hero-mosaic-wrapper` opacity to 0.9 on desktop, 0.5 at 900px, and 0.4 at 768px.
+- Removed the hover translate animation on `.interest-row` while preserving the number accent color transition.
+- Deleted dead CSS rules for orange backgrounds.
+- Updated the "Currently exploring" rotating word mechanism in `script.js` to stop permanently on "networking" after completing one full 4-word cycle.
+- Removed PHP from the Software Development row description in `index.html`.
+- Updated `README.md`, `project-plan.md`, `docs/AGENTS.md`, `docs/project-brief.md`, and `testing-report.md` to ensure exact factual alignment with the codebase.
+
+### What Had to Be Fixed or Learned
+- **Sticky Headers Take Layout Space**: Because sticky headers remain in normal document flow prior to scrolling, applying both a full viewport height and header-sized top padding pushes subsequent content too far down the fold.
+- **Stacked Opacity Multiplies**: Multiple semi-transparent layers (wrapper opacity × element opacity × color alpha) compound rapidly, turning subtle decorative backgrounds nearly invisible unless base container opacities are tuned appropriately.
+- **Auto-Moving Content Accessibility**: Constraining rotating text to a single pass (under 10 seconds total) respects user attention and accessibility guidelines by avoiding continuous motion without sacrificing initial interactive polish.
